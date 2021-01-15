@@ -3,6 +3,7 @@ package com.jetbrains.simplelogin.androidapp.ui.login
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.jetbrains.simplelogin.androidapp.data.LoginDataSource
+import com.jetbrains.simplelogin.androidapp.data.LoginDataValidator
 import com.jetbrains.simplelogin.androidapp.data.LoginRepository
 
 /**
@@ -17,7 +18,8 @@ class LoginViewModelFactory : ViewModelProvider.Factory {
             return LoginViewModel(
                     loginRepository = LoginRepository(
                             dataSource = LoginDataSource()
-                    )
+                    ),
+                dataValidator = LoginDataValidator()
             ) as T
         }
         throw IllegalArgumentException("Unknown ViewModel class")
