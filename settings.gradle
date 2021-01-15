@@ -1,2 +1,3 @@
 rootProject.name = "Simple Login"
 include ':app'
+include ':shared'
