@@ -8,6 +8,7 @@ import androidx.annotation.StringRes
 import androidx.appcompat.app.AppCompatActivity
 import android.text.Editable
 import android.text.TextWatcher
+import android.util.Log
 import android.view.View
 import android.view.inputmethod.EditorInfo
 import android.widget.EditText
@@ -15,6 +16,7 @@ import android.widget.Toast
 import com.jetbrains.simplelogin.androidapp.databinding.ActivityLoginBinding
 
 import com.jetbrains.simplelogin.androidapp.R
+import com.jetbrains.simplelogin.shared.Greeting
 
 class LoginActivity : AppCompatActivity() {
 
@@ -23,6 +25,8 @@ class LoginActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        Log.i("Login Activity", "Hello from shared module: " + (Greeting().greeting()))
 
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
