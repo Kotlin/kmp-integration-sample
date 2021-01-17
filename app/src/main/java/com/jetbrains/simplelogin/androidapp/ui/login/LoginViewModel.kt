@@ -3,13 +3,12 @@ package com.jetbrains.simplelogin.androidapp.ui.login
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import android.util.Patterns
-import com.jetbrains.simplelogin.androidapp.data.LoginRepository
-import com.jetbrains.simplelogin.androidapp.data.Result
+import com.jetbrains.simplelogin.shared.data.LoginRepository
+import com.jetbrains.simplelogin.shared.data.Result
 
 import com.jetbrains.simplelogin.androidapp.R
-import com.jetbrains.simplelogin.androidapp.data.LoginDataValidator
-import com.jetbrains.simplelogin.androidapp.data.LoginDataValidator.Result.*
+import com.jetbrains.simplelogin.shared.data.LoginDataValidator
+import com.jetbrains.simplelogin.shared.data.LoginDataValidator.Result.*
 
 class LoginViewModel(private val loginRepository: LoginRepository, private val dataValidator: LoginDataValidator) : ViewModel() {
 
