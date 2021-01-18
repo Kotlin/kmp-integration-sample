@@ -16,7 +16,11 @@ class LoginDataValidator {
     }
 
     fun checkPassword(password: String): Result {
-        return if (password.length > 5) Result.Success else Result.Error("Password must be >5 characters")
+        return when  {
+            password.length < 5 -> Result.Error("Password must be >5 characters")
+            password.toLowerCase() == "password" -> Result.Error("Password shouldn't be \"password\"")
+            else -> Result.Success
+        }
     }
 
     private fun isEmailValid(email: String) = emailRegex.matches(email)
