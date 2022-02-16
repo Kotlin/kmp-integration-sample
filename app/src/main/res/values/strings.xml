@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Simple Login</string>
+    <string name="app_name">Simple login</string>
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>

@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  SimpleLoginIOS
 //
-//  Created by Ekaterina.Petrova on 15.01.2021.
+//  Created by Danil.Pavlov on 16.02.2022.
 //
 
 import SwiftUI

@@ -8,7 +8,6 @@ import com.jetbrains.simplelogin.shared.data.Result
 
 import com.jetbrains.simplelogin.androidapp.R
 import com.jetbrains.simplelogin.shared.data.LoginDataValidator
-import com.jetbrains.simplelogin.shared.data.LoginDataValidator.Result.*
 
 class LoginViewModel(private val loginRepository: LoginRepository, private val dataValidator: LoginDataValidator) : ViewModel() {
 
