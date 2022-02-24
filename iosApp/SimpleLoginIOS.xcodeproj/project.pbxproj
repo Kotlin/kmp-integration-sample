@@ -7,22 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B88D4E0427BD677A0077F1B6 /* SimpleLoginIOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88D4E0327BD677A0077F1B6 /* SimpleLoginIOSApp.swift */; };
-		B88D4E0627BD677A0077F1B6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88D4E0527BD677A0077F1B6 /* ContentView.swift */; };
-		B88D4E0827BD677D0077F1B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B88D4E0727BD677D0077F1B6 /* Assets.xcassets */; };
-		B88D4E0B27BD677D0077F1B6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B88D4E0A27BD677D0077F1B6 /* Preview Assets.xcassets */; };
+		B8C7538427C7AE0A00604F15 /* simpleLoginIOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C7538327C7AE0A00604F15 /* simpleLoginIOSApp.swift */; };
+		B8C7538627C7AE0A00604F15 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C7538527C7AE0A00604F15 /* ContentView.swift */; };
+		B8C7538827C7AE0D00604F15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8C7538727C7AE0D00604F15 /* Assets.xcassets */; };
+		B8C7538B27C7AE0D00604F15 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8C7538A27C7AE0D00604F15 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B88D4E0027BD677A0077F1B6 /* SimpleLoginIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleLoginIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B88D4E0327BD677A0077F1B6 /* SimpleLoginIOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleLoginIOSApp.swift; sourceTree = "<group>"; };
-		B88D4E0527BD677A0077F1B6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		B88D4E0727BD677D0077F1B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B88D4E0A27BD677D0077F1B6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B8C7538027C7AE0A00604F15 /* simpleLoginIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = simpleLoginIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8C7538327C7AE0A00604F15 /* simpleLoginIOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = simpleLoginIOSApp.swift; sourceTree = "<group>"; };
+		B8C7538527C7AE0A00604F15 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B8C7538727C7AE0D00604F15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B8C7538A27C7AE0D00604F15 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B88D4DFD27BD677A0077F1B6 /* Frameworks */ = {
+		B8C7537D27C7AE0A00604F15 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -32,37 +32,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B88D4DF727BD677A0077F1B6 = {
+		B8C7537727C7AE0A00604F15 = {
 			isa = PBXGroup;
 			children = (
-				B88D4E0227BD677A0077F1B6 /* SimpleLoginIOS */,
-				B88D4E0127BD677A0077F1B6 /* Products */,
+				B8C7538227C7AE0A00604F15 /* simpleLoginIOS */,
+				B8C7538127C7AE0A00604F15 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		B88D4E0127BD677A0077F1B6 /* Products */ = {
+		B8C7538127C7AE0A00604F15 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B88D4E0027BD677A0077F1B6 /* SimpleLoginIOS.app */,
+				B8C7538027C7AE0A00604F15 /* simpleLoginIOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B88D4E0227BD677A0077F1B6 /* SimpleLoginIOS */ = {
+		B8C7538227C7AE0A00604F15 /* simpleLoginIOS */ = {
 			isa = PBXGroup;
 			children = (
-				B88D4E0327BD677A0077F1B6 /* SimpleLoginIOSApp.swift */,
-				B88D4E0527BD677A0077F1B6 /* ContentView.swift */,
-				B88D4E0727BD677D0077F1B6 /* Assets.xcassets */,
-				B88D4E0927BD677D0077F1B6 /* Preview Content */,
+				B8C7538327C7AE0A00604F15 /* simpleLoginIOSApp.swift */,
+				B8C7538527C7AE0A00604F15 /* ContentView.swift */,
+				B8C7538727C7AE0D00604F15 /* Assets.xcassets */,
+				B8C7538927C7AE0D00604F15 /* Preview Content */,
 			);
-			path = SimpleLoginIOS;
+			path = simpleLoginIOS;
 			sourceTree = "<group>";
 		};
-		B88D4E0927BD677D0077F1B6 /* Preview Content */ = {
+		B8C7538927C7AE0D00604F15 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				B88D4E0A27BD677D0077F1B6 /* Preview Assets.xcassets */,
+				B8C7538A27C7AE0D00604F15 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -70,40 +70,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B88D4DFF27BD677A0077F1B6 /* SimpleLoginIOS */ = {
+		B8C7537F27C7AE0A00604F15 /* simpleLoginIOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B88D4E0E27BD677D0077F1B6 /* Build configuration list for PBXNativeTarget "SimpleLoginIOS" */;
+			buildConfigurationList = B8C7538E27C7AE0D00604F15 /* Build configuration list for PBXNativeTarget "simpleLoginIOS" */;
 			buildPhases = (
-				B88D4E1127BD67BE0077F1B6 /* Run Script */,
-				B88D4DFC27BD677A0077F1B6 /* Sources */,
-				B88D4DFD27BD677A0077F1B6 /* Frameworks */,
-				B88D4DFE27BD677A0077F1B6 /* Resources */,
+				B8C7539127C7AE4F00604F15 /* Run Script */,
+				B8C7537C27C7AE0A00604F15 /* Sources */,
+				B8C7537D27C7AE0A00604F15 /* Frameworks */,
+				B8C7537E27C7AE0A00604F15 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = SimpleLoginIOS;
-			productName = SimpleLoginIOS;
-			productReference = B88D4E0027BD677A0077F1B6 /* SimpleLoginIOS.app */;
+			name = simpleLoginIOS;
+			productName = simpleLoginIOS;
+			productReference = B8C7538027C7AE0A00604F15 /* simpleLoginIOS.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		B88D4DF827BD677A0077F1B6 /* Project object */ = {
+		B8C7537827C7AE0A00604F15 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
-					B88D4DFF27BD677A0077F1B6 = {
+					B8C7537F27C7AE0A00604F15 = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
 				};
 			};
-			buildConfigurationList = B88D4DFB27BD677A0077F1B6 /* Build configuration list for PBXProject "SimpleLoginIOS" */;
+			buildConfigurationList = B8C7537B27C7AE0A00604F15 /* Build configuration list for PBXProject "simpleLoginIOS" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -111,30 +111,30 @@
 				en,
 				Base,
 			);
-			mainGroup = B88D4DF727BD677A0077F1B6;
-			productRefGroup = B88D4E0127BD677A0077F1B6 /* Products */;
+			mainGroup = B8C7537727C7AE0A00604F15;
+			productRefGroup = B8C7538127C7AE0A00604F15 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B88D4DFF27BD677A0077F1B6 /* SimpleLoginIOS */,
+				B8C7537F27C7AE0A00604F15 /* simpleLoginIOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		B88D4DFE27BD677A0077F1B6 /* Resources */ = {
+		B8C7537E27C7AE0A00604F15 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B88D4E0B27BD677D0077F1B6 /* Preview Assets.xcassets in Resources */,
-				B88D4E0827BD677D0077F1B6 /* Assets.xcassets in Resources */,
+				B8C7538B27C7AE0D00604F15 /* Preview Assets.xcassets in Resources */,
+				B8C7538827C7AE0D00604F15 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		B88D4E1127BD67BE0077F1B6 /* Run Script */ = {
+		B8C7539127C7AE4F00604F15 /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -155,19 +155,19 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		B88D4DFC27BD677A0077F1B6 /* Sources */ = {
+		B8C7537C27C7AE0A00604F15 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B88D4E0627BD677A0077F1B6 /* ContentView.swift in Sources */,
-				B88D4E0427BD677A0077F1B6 /* SimpleLoginIOSApp.swift in Sources */,
+				B8C7538627C7AE0A00604F15 /* ContentView.swift in Sources */,
+				B8C7538427C7AE0A00604F15 /* simpleLoginIOSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		B88D4E0C27BD677D0077F1B6 /* Debug */ = {
+		B8C7538C27C7AE0D00604F15 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -228,7 +228,7 @@
 			};
 			name = Debug;
 		};
-		B88D4E0D27BD677D0077F1B6 /* Release */ = {
+		B8C7538D27C7AE0D00604F15 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -283,16 +283,18 @@
 			};
 			name = Release;
 		};
-		B88D4E0F27BD677D0077F1B6 /* Debug */ = {
+		B8C7538F27C7AE0D00604F15 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SimpleLoginIOS/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"simpleLoginIOS/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../shared/build/xcode-frameworks/$(CONFIGURATION)/$(SDK_NAME)\n";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/../shared/build/xcode-frameworks/$(CONFIGURATION)/$(SDK_NAME)\n$(SRCROOT)/../shared/build/xcode-frameworks/$(CONFIGURATION)/$(SDK_NAME)\n$(SRCROOT)/../shared/build/xcode-frameworks/$(CONFIGURATION)/$(SDK_NAME)\n",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -309,7 +311,7 @@
 					"-framework",
 					"shared\n",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.jetbrains.SimpleLoginIOS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jetbrains.simpleLoginIOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -317,16 +319,18 @@
 			};
 			name = Debug;
 		};
-		B88D4E1027BD677D0077F1B6 /* Release */ = {
+		B8C7539027C7AE0D00604F15 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SimpleLoginIOS/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"simpleLoginIOS/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../shared/build/xcode-frameworks/$(CONFIGURATION)/$(SDK_NAME)\n";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/../shared/build/xcode-frameworks/$(CONFIGURATION)/$(SDK_NAME)\n$(SRCROOT)/../shared/build/xcode-frameworks/$(CONFIGURATION)/$(SDK_NAME)\n$(SRCROOT)/../shared/build/xcode-frameworks/$(CONFIGURATION)/$(SDK_NAME)\n",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -343,7 +347,7 @@
 					"-framework",
 					"shared\n",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.jetbrains.SimpleLoginIOS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jetbrains.simpleLoginIOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -354,25 +358,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B88D4DFB27BD677A0077F1B6 /* Build configuration list for PBXProject "SimpleLoginIOS" */ = {
+		B8C7537B27C7AE0A00604F15 /* Build configuration list for PBXProject "simpleLoginIOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B88D4E0C27BD677D0077F1B6 /* Debug */,
-				B88D4E0D27BD677D0077F1B6 /* Release */,
+				B8C7538C27C7AE0D00604F15 /* Debug */,
+				B8C7538D27C7AE0D00604F15 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B88D4E0E27BD677D0077F1B6 /* Build configuration list for PBXNativeTarget "SimpleLoginIOS" */ = {
+		B8C7538E27C7AE0D00604F15 /* Build configuration list for PBXNativeTarget "simpleLoginIOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B88D4E0F27BD677D0077F1B6 /* Debug */,
-				B88D4E1027BD677D0077F1B6 /* Release */,
+				B8C7538F27C7AE0D00604F15 /* Debug */,
+				B8C7539027C7AE0D00604F15 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = B88D4DF827BD677A0077F1B6 /* Project object */;
+	rootObject = B8C7537827C7AE0A00604F15 /* Project object */;
 }

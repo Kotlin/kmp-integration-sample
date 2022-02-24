@@ -1,19 +1,12 @@
-//
-//  ContentView.swift
-//  SimpleLoginIOS
-//
-//  Created by Danil.Pavlov on 16.02.2022.
-//
-
 import SwiftUI
 import shared
 
 struct ContentView: View {
     @State private var username: String = ""
     @State private var password: String = ""
-    
+
     @ObservedObject var viewModel: ContentView.ViewModel
-    
+
     var body: some View {
         VStack(spacing: 15.0) {
             ValidatedTextField(titleKey: "Username", secured: false, text: $username, errorMessage: viewModel.formState.usernameError, onChange: {
@@ -36,7 +29,7 @@ struct ValidatedTextField: View {
     @Binding var text: String
     let errorMessage: String?
     let onChange: () -> ()
-    
+
     @ViewBuilder var textField: some View {
         if secured {
             SecureField(titleKey, text: $text)
@@ -44,7 +37,7 @@ struct ValidatedTextField: View {
             TextField(titleKey, text: $text)
         }
     }
-    
+
     var body: some View {
         ZStack {
             textField
@@ -66,7 +59,7 @@ struct ValidatedTextField: View {
 struct FieldTextErrorHint: View {
     let error: String
     @State private var showingAlert = false
-    
+
     var body: some View {
         Button(action: { self.showingAlert = true }) {
             Image(systemName: "exclamationmark.triangle.fill")
@@ -79,7 +72,7 @@ struct FieldTextErrorHint: View {
 }
 
 extension ContentView {
-    
+
     struct LoginFormState {
         let usernameError: String?
         let passwordError: String?
@@ -87,18 +80,18 @@ extension ContentView {
             get { return usernameError == nil && passwordError == nil }
         }
     }
-    
+
     class ViewModel: ObservableObject {
         @Published var formState = LoginFormState(usernameError: nil, passwordError: nil)
-        
+
         let loginValidator: LoginDataValidator
         let loginRepository: LoginRepository
-        
+
         init(loginRepository: LoginRepository, loginValidator: LoginDataValidator) {
             self.loginRepository = loginRepository
             self.loginValidator = loginValidator
         }
-        
+
         func login(username: String, password: String) {
             if let result = loginRepository.login(username: username, password: password) as? ResultSuccess  {
                 print("Successful login. Welcome, \(result.data.displayName)")
@@ -106,7 +99,7 @@ extension ContentView {
                 print("Error while logging in")
             }
         }
-        
+
         func loginDataChanged(username: String, password: String) {
             formState = LoginFormState(
                 usernameError: (loginValidator.checkUsername(username: username) as? LoginDataValidator.ResultError)?.message,
