@@ -16,9 +16,9 @@ class LoginDataValidator {
     }
 
     fun checkPassword(password: String): Result {
-        return when  {
+        return when {
             password.length < 5 -> Result.Error("Password must be >5 characters")
-            password.toLowerCase() == "password" -> Result.Error("Password shouldn't be \"password\"")
+            password.lowercase() == "password" -> Result.Error("Password shouldn't be \"password\"")
             else -> Result.Success
         }
     }
