@@ -30,8 +30,8 @@ class LoginViewModel(private val loginRepository: LoginRepository, private val d
 
     fun loginDataChanged(username: String, password: String) {
         _loginForm.value = LoginFormState(
-            usernameError = (dataValidator.checkUsername(username) as? Error)?.message,
-            passwordError = (dataValidator.checkPassword(password) as? Error)?.message
+            usernameError = (dataValidator.checkUsername(username) as? LoginDataValidator.Result.Error)?.message,
+            passwordError = (dataValidator.checkPassword(password) as? LoginDataValidator.Result.Error)?.message
         )
     }
 }
