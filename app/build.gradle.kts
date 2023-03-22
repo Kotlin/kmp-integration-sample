@@ -35,6 +35,7 @@ android {
     buildFeatures {
         viewBinding = true
     }
+    namespace = "com.jetbrains.simplelogin.androidapp"
 }
 
 dependencies {
