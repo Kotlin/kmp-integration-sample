@@ -1,6 +1,6 @@
-package com.jetbrains.simplelogin.androidapp.data
+package com.jetbrains.simplelogin.shared
 
-import com.jetbrains.simplelogin.androidapp.data.model.LoggedInUser
+import com.jetbrains.simplelogin.shared.model.LoggedInUser
 
 /**
  * Class that requests authentication and user information from the remote data source and
