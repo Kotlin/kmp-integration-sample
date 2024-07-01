@@ -1,3 +1,6 @@
+rootProject.name = "SimpleLogin"
+enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
+
 pluginManagement {
     repositories {
         gradlePluginPortal()
@@ -11,5 +14,4 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "Simple login"
 include("app")
