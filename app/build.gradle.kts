@@ -1,6 +1,14 @@
+import org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_1_8
+
 plugins {
-    id ("com.android.application")
-    id ("org.jetbrains.kotlin.android")
+    alias(libs.plugins.kotlinAndroid)
+    alias(libs.plugins.androidApplication)
+}
+
+kotlin {
+    compilerOptions {
+        jvmTarget = JVM_1_8
+    }
 }
 
 android {
@@ -19,7 +27,7 @@ android {
     buildTypes {
         release {
             isMinifyEnabled = false
-            proguardFiles (
+            proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
@@ -29,9 +37,6 @@ android {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
     }
-    kotlinOptions {
-        jvmTarget = "1.8"
-    }
     buildFeatures {
         viewBinding = true
     }
@@ -39,15 +44,14 @@ android {
 }
 
 dependencies {
-    implementation (project(":shared"))
-    implementation (libs.androidx.core.ktx)
-    implementation (libs.androidx.appcompat)
-    implementation (libs.androidx.material)
-    implementation (libs.androidx.annotation)
-    implementation (libs.androidx.constraintlayout)
-    implementation (libs.androidx.lifecycle.livedata.ktx)
-    implementation (libs.androidx.lifecycle.viewmodel.ktx)
-    testImplementation (libs.junit)
-    androidTestImplementation (libs.androidx.test.junit)
-    androidTestImplementation (libs.androidx.espresso.core)
+    implementation(libs.androidx.core.ktx)
+    implementation(libs.androidx.appcompat)
+    implementation(libs.androidx.material)
+    implementation(libs.androidx.annotation)
+    implementation(libs.androidx.constraintlayout)
+    implementation(libs.androidx.lifecycle.livedata.ktx)
+    implementation(libs.androidx.lifecycle.viewmodel.ktx)
+    testImplementation(libs.junit)
+    androidTestImplementation(libs.androidx.test.junit)
+    androidTestImplementation(libs.androidx.espresso.core)
 }
