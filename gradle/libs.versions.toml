@@ -1,5 +1,5 @@
 [versions]
-agp = "8.2.2"
+android-gradlePlugin = "8.2.2"
 android-compileSdk = "34"
 android-minSdk = "24"
 android-targetSdk = "34"
@@ -15,7 +15,7 @@ compose = "1.6.8"
 compose-plugin = "1.6.10"
 imageLoader = "1.6.3"
 junit = "4.13.2"
-kotlin = "2.0.0"
+kotlin = "2.0.20"
 kotlinxCoroutinesCore = "1.8.0"
 ktor = "2.3.7"
 lifecycleLivedataKtx = "2.8.2"
@@ -46,8 +46,8 @@ voyager-navigator = { module = "cafe.adriel.voyager:voyager-navigator", version.
 ktor-client-mock = { module = "io.ktor:ktor-client-mock", version.ref = "ktor" }
 
 [plugins]
-androidApplication = { id = "com.android.application", version.ref = "agp" }
-androidLibrary = { id = "com.android.library", version.ref = "agp" }
+androidApplication = { id = "com.android.application", version.ref = "android-gradlePlugin" }
+androidLibrary = { id = "com.android.library", version.ref = "android-gradlePlugin" }
 jetbrainsCompose = { id = "org.jetbrains.compose", version.ref = "compose-plugin" }
 kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
 compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
