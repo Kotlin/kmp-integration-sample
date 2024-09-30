@@ -21,7 +21,7 @@ kotlin {
 
     targets.withType<KotlinNativeTarget>().configureEach {
         binaries.framework {
-            baseName = "Shared"
+            baseName = "shared"
             isStatic = true
         }
     }
