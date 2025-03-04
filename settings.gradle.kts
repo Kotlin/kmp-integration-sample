@@ -16,6 +16,6 @@ dependencyResolutionManagement {
 }
 
 include(":app")
+include(":shared")
 
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
-include(":shared")
