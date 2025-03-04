@@ -18,3 +18,4 @@ dependencyResolutionManagement {
 include(":app")
 
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
+include(":shared")
