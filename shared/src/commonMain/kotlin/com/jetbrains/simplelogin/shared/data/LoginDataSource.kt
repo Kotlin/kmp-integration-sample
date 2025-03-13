@@ -1,6 +1,7 @@
-package com.jetbrains.simplelogin.shared
+package com.jetbrains.simplelogin.shared.data
 
-import com.jetbrains.simplelogin.shared.model.LoggedInUser
+import com.jetbrains.simplelogin.shared.data.model.LoggedInUser
+import com.jetbrains.simplelogin.shared.randomUUID
 
 /**
  * Class that handles authentication w/ login credentials and retrieves user information.

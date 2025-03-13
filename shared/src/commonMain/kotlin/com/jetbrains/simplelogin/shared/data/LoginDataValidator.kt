@@ -1,4 +1,4 @@
-package com.jetbrains.simplelogin.shared
+package com.jetbrains.simplelogin.shared.data
 
 class LoginDataValidator {
 

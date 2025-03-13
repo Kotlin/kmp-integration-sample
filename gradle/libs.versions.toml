@@ -1,25 +1,28 @@
 [versions]
-android-gradlePlugin = "8.2.2"
-android-compileSdk = "34"
+android-gradlePlugin = "8.8.2"
+android-compileSdk = "35"
 android-minSdk = "24"
-android-targetSdk = "34"
-androidx-activityCompose = "1.9.0"
+android-targetSdk = "35"
+androidx-activityCompose = "1.10.1"
 androidx-appcompat = "1.7.0"
-androidx-constraintlayout = "2.1.4"
-androidx-core-ktx = "1.13.1"
+androidx-constraintlayout = "2.2.1"
+androidx-core-ktx = "1.15.0"
 androidx-espresso-core = "3.6.1"
 androidx-material = "1.12.0"
 androidx-test-junit = "1.2.1"
-annotation = "1.8.0"
-compose = "1.6.8"
+annotation = "1.9.1"
+compose = "1.7.8"
 compose-plugin = "1.6.10"
 imageLoader = "1.6.3"
 junit = "4.13.2"
-kotlin = "2.0.20"
-kotlinxCoroutinesCore = "1.8.0"
-ktor = "2.3.7"
-lifecycleLivedataKtx = "2.8.2"
+kotlin = "2.1.10"
+kotlinxCoroutinesCore = "1.10.1"
+ktor = "3.1.0"
+lifecycleLivedataKtx = "2.8.7"
 voyagerNavigator = "1.0.0"
+kotlinStdlib = "2.1.10"
+runner = "1.5.2"
+core = "1.5.0"
 
 [libraries]
 androidx-annotation = { module = "androidx.annotation:annotation", version.ref = "annotation" }
@@ -44,6 +47,9 @@ ktor-client-core = { module = "io.ktor:ktor-client-core", version.ref = "ktor" }
 ktor-serialization-kotlinx-json = { module = "io.ktor:ktor-serialization-kotlinx-json", version.ref = "ktor" }
 voyager-navigator = { module = "cafe.adriel.voyager:voyager-navigator", version.ref = "voyagerNavigator" }
 ktor-client-mock = { module = "io.ktor:ktor-client-mock", version.ref = "ktor" }
+kotlin-stdlib = { group = "org.jetbrains.kotlin", name = "kotlin-stdlib", version.ref = "kotlinStdlib" }
+androidx-runner = { group = "androidx.test", name = "runner", version.ref = "runner" }
+androidx-core = { group = "androidx.test", name = "core", version.ref = "core" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "android-gradlePlugin" }
@@ -52,3 +58,4 @@ jetbrainsCompose = { id = "org.jetbrains.compose", version.ref = "compose-plugin
 kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
 kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+android-kotlin-multiplatform-library = { id = "com.android.kotlin.multiplatform.library", version.ref = "android-gradlePlugin" }

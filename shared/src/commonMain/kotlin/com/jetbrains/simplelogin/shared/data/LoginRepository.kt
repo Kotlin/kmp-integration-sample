@@ -1,6 +1,6 @@
-package com.jetbrains.simplelogin.shared
+package com.jetbrains.simplelogin.shared.data
 
-import com.jetbrains.simplelogin.shared.model.LoggedInUser
+import com.jetbrains.simplelogin.shared.data.model.LoggedInUser
 
 /**
  * Class that requests authentication and user information from the remote data source and
