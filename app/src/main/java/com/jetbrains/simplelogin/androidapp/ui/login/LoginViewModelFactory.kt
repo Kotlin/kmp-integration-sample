@@ -2,9 +2,9 @@ package com.jetbrains.simplelogin.androidapp.ui.login
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.jetbrains.simplelogin.androidapp.data.LoginDataSource
-import com.jetbrains.simplelogin.androidapp.data.LoginDataValidator
-import com.jetbrains.simplelogin.androidapp.data.LoginRepository
+import com.jetbrains.simplelogin.shared.data.LoginDataSource
+import com.jetbrains.simplelogin.shared.data.LoginDataValidator
+import com.jetbrains.simplelogin.shared.data.LoginRepository
 
 /**
  * ViewModel provider factory to instantiate LoginViewModel.
