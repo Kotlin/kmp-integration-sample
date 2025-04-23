@@ -21,7 +21,7 @@ import com.jetbrains.simplelogin.androidapp.R
 @Composable
 fun LoginScreen(
     viewModel: LoginViewModel,
-    onLoginSuccess: () -> Unit
+    onLoginSuccess: (LoginResult) -> Unit
 ) {
     val loginFormState by viewModel.loginFormState.collectAsStateWithLifecycle()
     val loginResult by viewModel.loginResult.collectAsStateWithLifecycle()
@@ -35,7 +35,7 @@ fun LoginScreen(
         loginResult?.let { result ->
             if (result.success != null) {
                 // Show welcome message
-                onLoginSuccess()
+                onLoginSuccess(result)
             }
         }
     }

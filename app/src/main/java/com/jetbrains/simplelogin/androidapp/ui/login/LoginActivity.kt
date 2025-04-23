@@ -8,30 +8,35 @@ import androidx.activity.compose.setContent
 import androidx.appcompat.app.AppCompatActivity
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
-import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.viewmodel.compose.viewModel
 import com.jetbrains.simplelogin.androidapp.R
 import com.jetbrains.simplelogin.shared.Greeting
+import com.jetbrains.simplelogin.shared.data.LoginDataSource
+import com.jetbrains.simplelogin.shared.data.LoginDataValidator
+import com.jetbrains.simplelogin.shared.data.LoginRepository
 
 class LoginActivity : AppCompatActivity() {
-
-    private lateinit var loginViewModel: LoginViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         Log.i("Login Activity", "Hello from shared module: " + (Greeting().greet()))
 
-        loginViewModel = ViewModelProvider(this, LoginViewModelFactory())
-            .get(LoginViewModel::class.java)
-
         setContent {
             MaterialTheme {
                 Surface() {
                     LoginScreen(
-                        viewModel = loginViewModel,
+                        viewModel = viewModel {
+                            LoginViewModel(
+                                loginRepository = LoginRepository(
+                                    dataSource = LoginDataSource()
+                                ),
+                                dataValidator = LoginDataValidator()
+                            )
+                        },
                         onLoginSuccess = {
                             // Show welcome message
-                            val successResult = loginViewModel.loginResult.value?.success
+                            val successResult = it.success
                             successResult?.let {
                                 val welcome = getString(R.string.welcome)
                                 Toast.makeText(
