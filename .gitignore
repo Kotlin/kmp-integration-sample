@@ -1,28 +1,10 @@
-### Gradle ###
-.gradle/
-build/
-
-### IDE ###
+.gradle
 *.iml
-
-/.idea/
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
-
-### Kotlin ###
-
-/.kotlin/
-
-### Android ###
+.idea/
+build/
+out/
 local.properties
-/captures
-.externalNativeBuild
-.cxx
-
-### OS ###
-
 .DS_Store
+xcuserdata/
+Pods/
+/.kotlin/
