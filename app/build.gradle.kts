@@ -1,19 +1,16 @@
-import org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_11
-
 plugins {
     alias(libs.plugins.androidApplication)
-    alias(libs.plugins.kotlinAndroid)
     alias(libs.plugins.compose.compiler)
 }
 
-kotlin {
-    compilerOptions {
-        jvmTarget = JVM_11
-    }
-}
-
 android {
-    compileSdk = libs.versions.android.compileSdk.get().toInt()
+    namespace = "com.jetbrains.simplelogin.androidapp"
+
+    compileSdk {
+        version = release(libs.versions.android.compileSdk.get().toInt()) {
+            minorApiLevel = 1
+        }
+    }
 
     defaultConfig {
         applicationId = "com.jetbrains.simplelogin.androidapp"
@@ -39,7 +36,9 @@ android {
         targetCompatibility = JavaVersion.VERSION_11
     }
 
-    namespace = "com.jetbrains.simplelogin.androidapp"
+    buildFeatures {
+        compose = true
+    }
 }
 
 dependencies {
