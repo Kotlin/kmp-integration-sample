@@ -2,10 +2,10 @@
 .kotlin
 .gradle
 **/build/
-xcuserdata
+xcuserdata/
 !src/**/build/
 local.properties
-.idea
+.idea/
 .DS_Store
 captures
 .externalNativeBuild
@@ -16,3 +16,5 @@ captures
 !*.xcodeproj/project.xcworkspace/
 !*.xcworkspace/contents.xcworkspacedata
 **/xcshareddata/WorkspaceSettings.xcsettings
+**/xcschememanagement.plist
+/.idea/
